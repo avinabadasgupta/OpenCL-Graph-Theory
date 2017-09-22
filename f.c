@@ -4,7 +4,7 @@
 #include<time.h>
 int main()
 {
-	int n=2048;	
+	int n=452;	
 	int *matrix=malloc(sizeof(int)*n*n);
 	int i,j,p;
 	for(i=0;i<n;i++)
@@ -25,14 +25,14 @@ int main()
                         {                                
                                 if(matrix[i*n+j]==999999)
 				{
-					p=rand()%(2048)+1;                                
+					p=rand()%(1000)+1;                                
                                 	matrix[i*n+j]=p;
 					matrix[j*n+i]=p;
 				}
                         }
                 }
         }	
-	FILE *fp = fopen("node2048.txt", "w");
+	FILE *fp = fopen("node452.txt", "w");
 	if (fp == NULL)
 	{
     		printf("Error opening file!\n");
